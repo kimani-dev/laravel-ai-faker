@@ -1,8 +1,9 @@
 <?php
 
-namespace Kimani\AIFaker\Services;
+namespace Kimani\LaravelAiFaker\Services;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Schema;
 use OpenAI;
 
@@ -12,7 +13,7 @@ class AIFaker
 
     public function __construct()
     {
-        $this->client = OpenAI::client(config('aifaker.api_key'));
+        $this->client = OpenAI::client(env('AIFAKER_API_KEY'));
     }
 
     /**

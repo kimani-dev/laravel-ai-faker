@@ -1,6 +1,6 @@
 <?php
 
-namespace Kimani\AIFaker\Providers;
+namespace Kimani\LaravelAiFaker\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
